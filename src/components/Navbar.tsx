@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png";
 
 const Navbar = ({ children }: { children: React.ReactNode }) => {
   return (
-    <nav className="bg-gray-900 border-gray-200 px-2 mt-4 sm:px-4 py-2.5 rounde">
+    <nav className="bg-gray-900 border-gray-200 px-2 sm:px-4 py-2.5 rounde">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
           <img src={Logo} className="h-6 mr-3 sm:h-9" alt="RubyCats Logo" />
