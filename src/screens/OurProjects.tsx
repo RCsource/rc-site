@@ -4,6 +4,11 @@ const OurProjects = () => {
   const [repos, setRepos] = useState([])
 
   useEffect(() => {
+    document.title = "Работа у нас" + " :: RubyCats"
+  }, [])
+
+
+  useEffect(() => {
     fetch('https://api.github.com/users/RCsource/repos')
       .then(res => res.json())
       .then(res => setRepos(res))

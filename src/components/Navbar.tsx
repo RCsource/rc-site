@@ -1,16 +1,17 @@
 import { BsTelegram } from "react-icons/bs";
 import Logo from "../assets/logo.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ children }: { children: React.ReactNode }) => {
   return (
     <nav className="border-gray-200 px-2 sm:px-4 py-2.5 rounde">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={Logo} className="h-6 mr-3 sm:h-9" alt="RubyCats Logo" />
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             RubyCats
           </span>
-        </a>
+        </Link>
         <div className="mx-auto"></div>
         <button
           data-collapse-toggle="navbar-default"

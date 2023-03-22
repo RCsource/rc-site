@@ -1,4 +1,10 @@
+import { useEffect } from "react"
+
 const Work = () => {
+  useEffect(() => {
+    document.title = "Работа у нас" + " :: RubyCats"
+  }, [])
+
   return (
     <div>
       <div>
