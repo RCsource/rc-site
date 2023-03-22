@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <div className="pt-7">
+    <div>
       <div>
         <h1 className="text-lg font-semibold">Критерии на вступления в команду - программист:</h1>
         <ul>

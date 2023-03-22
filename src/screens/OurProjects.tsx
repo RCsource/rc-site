@@ -10,7 +10,7 @@ const OurProjects = () => {
   }, [])
 
   return (
-    <div className='pt-7'>
+    <div>
       Наши проекты:
       <div className="flex gap-2">
       {repos.map((repo: any) => (
