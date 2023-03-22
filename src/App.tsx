@@ -13,8 +13,8 @@ const App = () => {
   return (
     <>
       <Head title='Главная' />
-      <main className="bg-gray-800 w-full h-full flex justify-center font-[Comfortaa] text-white">
-        <div className="container-lg px-4 h-[100vh] overflow-auto md:w-[800px] mx-auto bg-gray-900">
+      <main className="bg-gradient-to-tr from-pink-500 to-yellow-500 w-full h-full flex justify-center font-[Comfortaa] text-white">
+        <div className="container-lg px-4 h-[100vh] overflow-auto md:w-[800px] mx-auto bg-gray-800">
           <Navbar>
             <Link className={buttonStyle} to="/">Главная</Link>
             <Link className={buttonStyle} to="/work">Работа у нас</Link>

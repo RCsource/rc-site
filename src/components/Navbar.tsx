@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png";
 
 const Navbar = ({ children }: { children: React.ReactNode }) => {
   return (
-    <nav className="bg-gray-900 border-gray-200 px-2 sm:px-4 py-2.5 rounde">
+    <nav className="border-gray-200 px-2 sm:px-4 py-2.5 rounde">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="/" className="flex items-center">
           <img src={Logo} className="h-6 mr-3 sm:h-9" alt="RubyCats Logo" />
@@ -35,7 +35,7 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 border max-md:gap-2 border-gray-800 rounded-lg bg-gray-900 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 mt-4 border max-md:gap-2 border-gray-800 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {children}
             <a
               href="https://t.me/rubycoding"
