@@ -1,3 +1,4 @@
+import { Box, Text } from "@chakra-ui/react"
 import { useEffect } from "react"
 
 const Work = () => {
@@ -6,9 +7,9 @@ const Work = () => {
   }, [])
 
   return (
-    <div>
-      <div>
-        <h1 className="text-lg font-semibold">Критерии на вступления в команду - программист:</h1>
+    <Box p={4}>
+      <Box>
+        <h3>Критерии на вступления в команду - программист:</h3>
         <ul>
           <li>1. Вы знаете Ruby? Если нет то какие языки?</li>
           <li>2. С какой целью хотите попасть в команду RubyCats?</li>
@@ -17,19 +18,19 @@ const Work = () => {
           <li>5. Сколько вам лет?</li>
           <li>6. Какой ваш псевдоним или же имя?</li>
         </ul>
-        <h1 className="text-lg text-green-500 font-semibold">Набор открыт</h1>
-      </div>
-      <div>
-        <h1 className="text-lg font-semibold">Критерии на вступления в команду - художник:</h1>
+        <Text color="#16a34a">Набор открыт</Text>
+      </Box>
+      <Box>
+        <h3>Критерии на вступления в команду - художник:</h3>
         <ul>
           <li>1. Ваше имя?</li>
           <li>2. Ваш возраст?</li>
           <li>3. В каких программах работаете?</li>
           <li>4. Готовы ли вы вы идти послом в другую студию в случае заказа? За это платат :3</li>
         </ul>
-        <h1 className="text-lg text-green-500 font-semibold">Набор открыт</h1>
-      </div>
-    </div>
+        <Text color="#16a34a">Набор открыт</Text>
+      </Box>
+    </Box>
   )
 }
 
