@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Box, SimpleGrid, Image, VStack, Text } from '@chakra-ui/react';
 
 const OurProjects = () => {
   const [repos, setRepos] = useState([])
@@ -15,21 +16,21 @@ const OurProjects = () => {
   }, [])
 
   return (
-    <div>
+    <Box p={4}>
       Наши проекты:
-      <div className="flex gap-2">
+      <SimpleGrid mt={2} columns={3} gap={2}>
       {repos.map((repo: any) => (
-        <a href={repo.html_url} key={repo.id}>
-          <div className="p-2 border grid grid-cols-1 place-items-center border-gray-500 rounded-lg">
-            <img src={repo.owner.avatar_url} alt={repo.owner.login} className="w-32 h-32 rounded-lg mr-2" />
-            <h3 className="text-lg">{repo.name}</h3>
-            <p>{repo.description}</p>
-            <p>Последнее обновление: {new Date(repo.updated_at).toLocaleString()}</p>
-          </div>
+        <a href={repo.html_url} key={repo.updated_at}>
+          <VStack border="1px solid #4b5563" position="relative" borderRadius="5px" p={5} h={320}>
+            <Image src={repo.owner.avatar_url}  alt={repo.owner.login} width={100} borderRadius={10} />
+            <Text textAlign="center" className="text-lg">{repo.name}</Text>
+            <Text textAlign="center">{repo.description}</Text>
+            <Text position="absolute" textAlign="center" pb={2} bottom={0}>{new Date(repo.updated_at).toLocaleString()}</Text>
+          </VStack>
         </a>
       ))}
-      </div>
-    </div>
+      </SimpleGrid>
+    </Box>
   )
 }
 
